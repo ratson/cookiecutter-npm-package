@@ -1,0 +1,26 @@
+{
+  "name": "{{ cookiecutter.github_repo_name }}",
+  "version": "0.0.0",
+  "description": "{{ cookiecutter.description }}",
+  "scripts": {
+    "lint": "eslint --ext js,md .",
+    "test": "ava",
+    "posttest": "npm run lint"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "ava": "^0.20.0",
+    "eslint": "^4.2.0",
+    "eslint-config-concise": "^0.8.1",
+    "eslint-plugin-ava": "^4.2.1"
+  },
+  "repository": "{{ cookiecutter.github_username }}/{{ cookiecutter.github_repo_name }}",
+  "license": "MIT",
+  "engines": {
+    "node": ">=6"
+  },
+  "files": [
+    "index.js"
+  ]
+}
