@@ -10,10 +10,10 @@
   "dependencies": {
   },
   "devDependencies": {
-    "ava": "^0.21.0",
-    "eslint": "^4.3.0",
-    "eslint-config-concise": "^0.10.0",
-    "eslint-config-concise-ava": "^0.10.0"
+    "ava": "^0.22.0",
+    "eslint": "^4.5.0",
+    "eslint-config-concise": "^0.11.0",
+    "eslint-config-concise-ava": "^0.11.0"
   },
   "repository": "{{ cookiecutter.github_username }}/{{ cookiecutter.github_repo_name }}",
   "license": "MIT",
@@ -23,5 +23,7 @@
   "files": [
     "*.md",
     "index.js"
+  ],
+  "keywords": [
   ]
 }
