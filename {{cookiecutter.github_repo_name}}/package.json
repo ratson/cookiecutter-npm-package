@@ -5,15 +5,18 @@
   "scripts": {
     "lint": "eslint --ext js,md .",
     "test": "ava",
-    "posttest": "npm run lint"
+    "precommit": "lint-staged"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
-    "ava": "^0.22.0",
-    "eslint": "^4.5.0",
-    "eslint-config-concise": "^0.11.0",
-    "eslint-config-concise-ava": "^0.11.0"
+    "ava": "^0.23.0",
+    "eslint": "^4.10.0",
+    "eslint-config-concise": "^0.14.0",
+    "eslint-config-concise-ava": "^0.14.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.3.0",
+    "npm-run-all": "^4.1.1",
+    "prettier-eslint-cli": "^4.4.0"
   },
   "repository": "{{ cookiecutter.github_username }}/{{ cookiecutter.github_repo_name }}",
   "license": "MIT",
@@ -24,6 +27,12 @@
     "*.md",
     "index.js"
   ],
-  "keywords": [
-  ]
+  "keywords": [],
+  "lint-staged": {
+    "*.js": [
+      "prettier-eslint --write",
+      "eslint --fix",
+      "git add"
+    ]
+  }
 }
