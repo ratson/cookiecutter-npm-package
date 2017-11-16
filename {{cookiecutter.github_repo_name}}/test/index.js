@@ -1,5 +1,3 @@
-import test from 'ava'
-
-test(t => {
-  t.fail()
+test(() => {
+  expect(false).toBe(true)
 })

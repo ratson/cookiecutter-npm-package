@@ -4,18 +4,19 @@
   "description": "{{ cookiecutter.description }}",
   "scripts": {
     "lint": "eslint --ext js,md .",
-    "test": "ava",
-    "precommit": "lint-staged"
+    "test": "jest",
+    "precommit": "lint-staged",
+    "prepush": "jest"
   },
   "dependencies": {},
   "devDependencies": {
-    "ava": "^0.23.0",
-    "eslint": "^4.10.0",
-    "eslint-config-concise": "^0.14.0",
-    "eslint-config-concise-ava": "^0.14.0",
+    "eslint": "^4.11.0",
+    "eslint-config-concise": "^0.15.0",
+    "eslint-config-concise-jest": "^0.15.0",
     "husky": "^0.14.3",
-    "lint-staged": "^4.3.0",
-    "npm-run-all": "^4.1.1",
+    "jest": "^21.2.1",
+    "lint-staged": "^5.0.0",
+    "npm-run-all": "^4.1.2",
     "prettier-eslint-cli": "^4.4.0"
   },
   "repository": "{{ cookiecutter.github_username }}/{{ cookiecutter.github_repo_name }}",
